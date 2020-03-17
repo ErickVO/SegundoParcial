@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
+    <StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
@@ -11,6 +12,8 @@
     <Compile Remove="Migrations\20200316230231_inicial.Designer.cs" />
     <Compile Remove="Migrations\20200317004957_inicial.cs" />
     <Compile Remove="Migrations\20200317004957_inicial.Designer.cs" />
+    <Compile Remove="Migrations\20200317010825_inicial.cs" />
+    <Compile Remove="Migrations\20200317010825_inicial.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

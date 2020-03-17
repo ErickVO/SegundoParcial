@@ -12,7 +12,7 @@ namespace SegundoParcial.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source = Parcial2.db");
+            optionsBuilder.UseSqlite(@"Data Source=Parcial.db");
         }
 
        
