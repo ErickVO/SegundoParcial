@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SegundoParcial.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace SegundoParcial
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void RPMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            RegistroParcial rp = new RegistroParcial();
+            rp.Show();
         }
     }
 }

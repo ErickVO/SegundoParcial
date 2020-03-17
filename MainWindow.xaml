@@ -7,9 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="500">
     <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="/Resources/Fondo.png"/>
         </Grid.Background>
 
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Menu Height="16">
+                <MenuItem x:Name="RPMenuItem" Header="Registro Parcial" FontWeight="Bold" Click="RPMenuItem_Click"/>
+            </Menu>
+        </StackPanel>
+        
+        
     </Grid>
 </Window>
